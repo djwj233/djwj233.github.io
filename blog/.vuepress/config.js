@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'VuePress Blog Example',
-  description: 'This is a blog example built by VuePress',
+  title: 'djwj233\'s blog',
+  description: 'This is a blog built by djwj233, using vuepress',
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
   themeConfig: {
     /**
@@ -14,12 +14,16 @@ module.exports = {
      */
     nav: [
       {
-        text: 'Blog',
+        text: '博文',
         link: '/',
       },
       {
-        text: 'Tags',
+        text: '标签',
         link: '/tag/',
+      },
+      {
+        text: '关于我',
+        link: '/1970/01/01/about-me/',
       },
     ],
     /**
@@ -28,24 +32,35 @@ module.exports = {
     footer: {
       contact: [
         {
-          type: 'github',
-          link: 'https://github.com/ulivz',
+          type: 'mail',
+          link: 'mailto:2494822564@qq.com',
         },
         {
-          type: 'twitter',
-          link: 'https://twitter.com/_ulivz',
+          type: 'github',
+          link: 'https://github.com/djwj233',
         },
       ],
       copyright: [
         {
-          text: 'Privacy Policy',
-          link: 'https://policies.google.com/privacy?hl=en-US',
-        },
-        {
-          text: 'MIT Licensed | Copyright © 2018-present Vue.js',
+          text: 'MIT Licensed | Copyright © 2024-present djwj233',
           link: '',
         },
       ],
     },
+    globalPagination: {
+      lengthPerPage:'5'
+    },
+    feed: {
+      canonical_base:'https://djwj233.github.io'
+    }
   },
+  markdown: {
+    lineNumbers: true,
+    plugins: [
+      ['markdown-it-texmath', {
+        engine: require('katex'),
+        delimiters: 'dollars'
+      }]
+    ]
+  }
 }
