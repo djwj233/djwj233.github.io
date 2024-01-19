@@ -1,7 +1,7 @@
 ---
 date: 2024-1-18
 tags: 
-  - shitpost
+  - NOI 知识一览
 author: djwj233
 location: China  
 ---
@@ -247,7 +247,7 @@ Gusfield 算法较于 Gomory-Hu 算法简单许多。
 
 不过代价是其只能求出等价流树，无法构造方案。
 
-```c++
+```cpp
 vector<pair<int, int> > g[N]; bool vis[N];
 set<int> MinCut(int u, int v) {
     memcpy(edge, Edge, sizeof(edge));

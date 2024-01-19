@@ -1,13 +1,7 @@
-# blog
+# djwj233 的博客
 
-> djwj233&#39;s personal blog
+这是一个使用 VuePress 搭的十分简易的博客。
 
-## Development
+现在这里
 
-```bash
-yarn dev
-yarn build
-```
-
-For more details, please head VuePress's [documentation](https://v1.vuepress.vuejs.org/).
-
+##
