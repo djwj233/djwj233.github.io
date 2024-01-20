@@ -1,8 +1,9 @@
 module.exports = {
   title: 'djwj233\'s blog',
   description: 'This is a blog built by djwj233, using vuepress',
-  theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
+   // OR shortcut: @vuepress/blog
   themeConfig: {
+    navTitle: 'djwj233',
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/#modifyblogpluginoptions
      */
