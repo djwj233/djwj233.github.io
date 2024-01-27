@@ -60,9 +60,6 @@ export default {
     padding-top 0
 
 @media (max-width: $MQMobile)
-  .vuepress-blog-theme-content
-    padding-top 0
-
   .post-title
     margin-top 0
 </style>
